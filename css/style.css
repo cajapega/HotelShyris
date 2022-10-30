@@ -68,6 +68,7 @@ body {
 .nav-toggle {
     display: flex;
     flex-direction: column;
+
     width: 3rem;
     height: 3rem;
     border: 0;
@@ -128,6 +129,10 @@ body {
         
         height: calc(100% - 60px); 
         overflow-y: auto; 
+
+        left: 100%; /*esta relacion a la clase .nav-menu_visible,  basicamente mueve 
+        los elementos hacia la izquierda, al ponerle 100% da el efecto como que los oculta*/
+        transition: 0.4s;
     }
 
     .nav-menu-item {
@@ -138,5 +143,13 @@ body {
         font-size: 25px; 
         background: none; 
         color: crimson;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu_visible {
+        left: 0; /*Vuelve "Visible" relacionado al left aplicado arriba*/
     }
 }
