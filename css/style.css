@@ -133,8 +133,10 @@ body {
     .nav-menu-item {
         line-height: 90px; 
     }
-    
-    .nav-menu-link:hover {
-        background-color:bisque;
+
+    .nav-menu-link:hover { 
+        font-size: 25px; 
+        background: none; 
+        color: crimson;
     }
 }

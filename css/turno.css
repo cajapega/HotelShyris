@@ -149,7 +149,10 @@ caja*/
         line-height: 90px; /*Espacio entre altura de los elementos*/
     }
     
-    .nav-menu-link:hover {
-        background-color:bisque;
+    /*Hace que al meterme la pag y presionar el boton de menu se muestre seleccionada*/
+    .nav-menu-link:hover { 
+        font-size: 25px; /*Hago el texto mas grande*/
+        background: none; /*elimina la accion de recolorear la caja*/
+        color: crimson;
     }
 }
