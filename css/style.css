@@ -8,7 +8,7 @@ body {
     padding: 90px; 
 }
 
-.hearder {
+.header {
     margin-top: 2px;
 
     background-color:crimson;
@@ -130,8 +130,7 @@ body {
         height: calc(100% - 60px); 
         overflow-y: auto; 
 
-        left: 100%; /*esta relacion a la clase .nav-menu_visible,  basicamente mueve 
-        los elementos hacia la izquierda, al ponerle 100% da el efecto como que los oculta*/
+        left: 100%; 
         transition: 0.4s;
     }
 
@@ -150,6 +149,6 @@ body {
     }
 
     .nav-menu_visible {
-        left: 0; /*Vuelve "Visible" relacionado al left aplicado arriba*/
+        left: 0; 
     }
 }
