@@ -6,23 +6,58 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    pointer-events: none;;
+    /*pointer-events: none;;*/
 }
 
-a { font-size: 1.5em;
+ul, a  { font-size: 1.45em;
     text-decoration: none; }
 h1 { font-size: 1.00em;
      text-align: center; }
 h5 { font-size: 0.8em; }
-img { width: 14em;
-      height: 10em;
+img { width: 13em;
+      height: 9em;
 }
 
 .logo { 
-    font-size: 2.5em; 
+    font-size: 2.00em; 
     font-weight: bold;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    border: 0;
+    background: transparent; /*vuelve transparente la caja*/
+    gap: .65rem; /*separa los elementos*/
+
+    margin: 9px;
+}
+
+.nav-toggle > div {
+    background: black;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5; 
+    transform-origin: left;
+}
+
+.nav-toggle:hover div:first-child { transform: rotate(45deg); }
+.nav-toggle:hover div:nth-child(2) { opacity: 0; }
+.nav-toggle:hover div:last-child { transform: rotate(-45deg); }
 
 
 
