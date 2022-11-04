@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Shyris</title>
+        <title>Hotel Shyris</title>
         <meta charset = "UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "Viewport" content = "width = device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/index.css">
-        <!--defer sirve para cargar el js cuando se ha cargado ya el html y el css-->
         <script defer src="js/script.js"></script>
     </head>
     <body>
-        <header class="header">
+        <header>
             <nav class="nav">
-                <a href="#" class="logo  nav-link">Hotel Shyris</a>
+                <a href="#" class="logo">Hotel Shyris</a>
                 <ul class="nav-menu nav-menu_visible">
-                    <li class="nav-menu-item">
-                        <a href="#" class="nav-menu-link nav-link ">Informacion</a>
-                    </li>
-                    <li class="nav-menu-item nav-link">
-                        <a href="#" class="nav-menu-link nav-link ">Instalaciones</a>
-                    </li>
-                    <li class="nav-menu-item nav-link">
-                        <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
-                    </li>
+                        <a href="#section-rooms" class="nav-menu-link nav-link ">Instalaciones</a>
+                        <a href="#direccion" class="nav-menu-link nav-link ">Direccion</a>
+                        <a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active">Contactos</a>
                 </ul>
                 <button class="nav-toggle">
                     <div class="div"></div>
@@ -31,25 +24,27 @@
                 </button>
             </nav>
         </header>
-        <section class="section">
-            <div class="span-info span-background">
-                <p class="span-info-text">Hotel Shyris esta ubicado en el casco historico de la ciudad de Riobamba, a un precio accesible te puedes hospedar en la zona centrica de la ciudad, cerca de restaurantes, parques, bancos y demas!</p>
-                <a href="/image/main-image.png" class="span-info-image"></a>
-            </div>
-            <div class="span-rooms">
-                <a href="image/rooms-image-one.png" class="rooms-image-one"></a>
-                <a href="image/rooms-image-two.png" class="rooms-image-two"></a>
-                <a href="image/rooms-image-three.png" class="rooms-image-three"></a>
-                <a href="image/rooms-image-four.png" class="rooms-image-four"></a>
-                <a href="image/rooms-image-five.png" class="rooms-image-four"></a>
-                <a href="image/rooms-image-five.png" class="rooms-image-four"></a>
-            </div>
-            <div class="span-contact">
-                <p class=""></p>
-            </div>
+        <section id="section-info">
+                <h1 class="span-info-text">Estamos ubicados en el casco 
+                    historico de la ciudad de Riobamba, a un precio accesible te 
+                    puedes hospedar en la zona centrica de la ciudad, cerca de 
+                    restaurantes, parques, bancos y demas!</h1>
+        </section >
+        <section id="section-rooms">
+            <img src="image/main-image.png" class="hotel-image">
+            <img src="image/rooms-image-one.png" class="hotel-image">
+            <img src="image/rooms-image-two.png" class="hotel-image">
+            <img src="image/rooms-image-three.png" class="hotel-image">
+            <img src="image/rooms-image-four.png" class="hotel-image">
+            <img src="image/rooms-image-five.png" class="hotel-image">
         </section>
-        <footer>
-            <p>powered by @charlyjum</p>
+        <section id="direccion">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque delectus, explicabo excepturi quis sapiente eveniet similique qui iste at, quae numquam consectetur. Eaque iusto pariatur reiciendis fugiat quasi consectetur minus.</h2>
+        </section>
+        <footer id="contacto">
+            <h5>Telf. 02600300</h3>
+            <h5>Celular. 0909090909</h3>
+            <h5>&copy; charlyjum</h3>
         </footer>
     </body>
 </html>
