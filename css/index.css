@@ -6,26 +6,34 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    /*pointer-events: none;;*/
 }
 
 ul, a  { font-size: 1.45em;
     text-decoration: none; }
-h1 { font-size: 1.00em;
-     text-align: center; }
+h1 { font-size: 1.5em;
+     text-align: center;
+     margin: 0 3.5em; }
 h5 { font-size: 0.8em; }
-img { width: 13em;
-      height: 9em;
+
+header {
+    background-color: crimson;
+    height: 55px;
+    opacity: 0.85;
 }
 
 .logo { 
     font-size: 2.00em; 
     font-weight: bold;
+    line-height: 55px;
+    margin-left: 0.8em;
+    color: cornsilk;
+
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
+    color: cornsilk;
 }
 
 .nav-menu {
@@ -43,7 +51,7 @@ img { width: 13em;
     background: transparent; /*vuelve transparente la caja*/
     gap: .65rem; /*separa los elementos*/
 
-    margin: 9px;
+    margin: 12px 10px 0 0;
 }
 
 .nav-toggle > div {
@@ -59,5 +67,37 @@ img { width: 13em;
 .nav-toggle:hover div:nth-child(2) { opacity: 0; }
 .nav-toggle:hover div:last-child { transform: rotate(-45deg); }
 
+#section-info { 
+    color: cornsilk;
+    display: flex;
+    align-items: center;
+    height: 93vh;
 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    , url(../image/section-info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
 
+#section-rooms {
+    background-color:  cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.85;
+}
+
+img {
+    margin: 3vh;
+    width: 21em;
+    height: 11em;
+    border-radius: 20px;
+}
+
+/*background-color:  cornsilk;*/
+/*background-color:  rgb(255, 159, 124);*/
