@@ -7,6 +7,3 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
 })
 
-body.addEventListener("Click", () => {
-    navMenu.classList.toggle("nav-menu_visible")
-})

@@ -17,11 +17,17 @@ ul, a{
 ul > a  { 
     padding: 30px 0;
 }
-h1 { font-size: 1.5em;
+h1 { font-size: 1.2em;
      text-align: center;
      margin: 0 3.8em; }
 
-h5 { font-size: 0.8em; }
+h5 { font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 0.7em;
+     padding: 0px 20px;
+   }
+h1, h5 {
+    line-height: 2em;
+}
 
 /*Seccion Header*/
 header {
@@ -46,6 +52,8 @@ header {
 .nav-menu_visible {
     display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 95vh;
     margin-top: 55px;
@@ -98,12 +106,14 @@ header {
 
 /*Seccion Info*/
 #section-info { 
-    color: cornsilk;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    width: 100vw;
+    height: 100vh;
 
+    color: cornsilk;
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.7),
@@ -116,33 +126,76 @@ header {
 
 /*Seccion Rooms*/
 #section-rooms {
-    background-color: rgb(250, 164, 181);
+    background-color: cornsilk; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    padding: 5em;
+}
+
+.button-rooms {
+    border-color: black;
+    padding: 2em 0;
+    border-radius: 25px;
+    margin-top: 3em;
+    background-color: rgb(225, 56, 90);
+}
+
+.button-rooms:hover {
+    background-color: crimson;
+    color: aliceblue;
+}
+
+#section-img {
+    display: none;
+    background-color: rgb(225, 56, 90);
+}
+
+#section-img, img {
+    margin: 15px 10px;
+    height: 250px;
+    width: 300px;
+}
+
+/*#section-img {
+    display: flex;
+    background-color: crimson;
+    height: 100vh;
+    width: 100%;
     padding: 14em;
 }
 
-#section-rooms h1 {
-    color: rgb(48, 48, 48);
+#section-img, img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    margin: 20px 0;
+}*/
+
+#section-direccion {
+    display: flex;
+    padding: 2em;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(        
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(46, 3, 3, 0.7)
+    ), url(../image/section-direccion.jpg);
+    color: cornsilk;
 }
 
-#buttom-rooms {
-    margin: 3em;;
-}
+#section-footer {
+    display: flex;
+    justify-content: space-between;
 
-.conteiner-rooms {
-    display: none;
-}
-
-img {
-
-}
-img:hover{
-
-}
-
-.section-direccion {
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: cornsilk;
 }
