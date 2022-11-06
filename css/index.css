@@ -5,7 +5,6 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 ul, a{
@@ -17,7 +16,7 @@ ul, a{
 ul > a  { 
     padding: 30px 0;
 }
-h1 { font-size: 1.2em;
+h1 { font-size: 120%;
      text-align: center;
      margin: 0 3.8em; }
 
@@ -26,7 +25,7 @@ h5 { font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
      padding: 0px 20px;
    }
 h1, h5 {
-    line-height: 2em;
+    line-height: 2em; /*controla el interlineado*/
 }
 
 /*Seccion Header*/
@@ -131,15 +130,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 5em;
+    height: 150vh;
 }
 
 .button-rooms {
-    border-color: black;
-    padding: 2em 0;
+    border-color: rgba(0, 0, 0, 0.849);
+    padding: 5% 15%;
     border-radius: 25px;
-    margin-top: 3em;
+    margin-top: 1em;
     background-color: rgb(225, 56, 90);
 }
 
@@ -148,35 +146,48 @@ header {
     color: aliceblue;
 }
 
-#section-img {
-    display: none;
-    background-color: rgb(225, 56, 90);
-}
-
-#section-img, img {
-    margin: 15px 10px;
-    height: 250px;
-    width: 300px;
-}
-
-/*#section-img {
-    display: flex;
-    background-color: crimson;
-    height: 100vh;
-    width: 100%;
-    padding: 14em;
-}
-
-#section-img, img {
+/*Container IMG*/
+.container-img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
 
-    width: 400px;
-    margin: 20px 0;
-}*/
+.hotel-img:first-child {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.445)
+    ), url(../image/hotel-image1.png);
+    background-size: cover;
+}
+.hotel-img:nth-child(2) {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.045),
+        rgba(0, 0, 0, 0.445)
+    ), url(../image/hotel-image4.png);
+    background-size: cover;
+}
+.hotel-img:last-child {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.045),
+        rgba(0, 0, 0, 0.445)
+    ), url(../image/hotel-image5.png);
+    background-size: cover;
+}
 
+.container-img, .hotel-img {
+    width: 70vw;
+    height: 120vh;
+    border-radius: 20px;
+}
+
+div > .hotel-img {
+    padding: 10px 0;
+}
+
+/*Seccion Direccion*/
 #section-direccion {
     display: flex;
     padding: 2em;
@@ -192,6 +203,7 @@ header {
     color: cornsilk;
 }
 
+/*Seccion Footer*/
 #section-footer {
     display: flex;
     justify-content: space-between;
