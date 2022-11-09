@@ -7,9 +7,9 @@ navToggle.addEventListener("click", () => {
 })
 
 //Funcionlidad Boton Ver imagenes
-//const buttonRooms = document.querySelector(".button-rooms");
-//const containerImg  = document.querySelector(".container-img");
+const buttonRooms = document.querySelector(".button-rooms");
+const containerImg  = document.querySelector(".container-img");
 
-/*buttonRooms.addEventListener("Click", () => {
+buttonRooms.addEventListener("click", () => {
     containerImg.classList.toggle("container-img_visible");
-})*/
+})

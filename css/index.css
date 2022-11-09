@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -95,7 +96,7 @@ header {
     height: 2px;
     width: 100%;
     border-radius: 5px;
-    transition: all .5; 
+    transition: all .8s; 
     transform-origin: left;
 }
 
@@ -131,6 +132,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 150vh;
+    width: 100vw;
 }
 
 .button-rooms {
@@ -144,47 +146,28 @@ header {
 .button-rooms:hover {
     background-color: crimson;
     color: aliceblue;
+    transition: 0.8s;
 }
 
-/*Container IMG*/
+/*IMG*/
+
 .container-img {
+    display: none;
+}
+
+.container-img_visible {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hotel-img:first-child {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.445)
-    ), url(../image/hotel-image1.png);
-    background-size: cover;
-}
-.hotel-img:nth-child(2) {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.045),
-        rgba(0, 0, 0, 0.445)
-    ), url(../image/hotel-image4.png);
-    background-size: cover;
-}
-.hotel-img:last-child {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.045),
-        rgba(0, 0, 0, 0.445)
-    ), url(../image/hotel-image5.png);
-    background-size: cover;
-}
+.container-img_visible img {
+    margin-top: 15px;
+    width: 300px;
+    height: 180px;
+    border-radius: 30px;
 
-.container-img, .hotel-img {
-    width: 70vw;
-    height: 120vh;
-    border-radius: 20px;
-}
-
-div > .hotel-img {
-    padding: 10px 0;
 }
 
 /*Seccion Direccion*/
@@ -192,6 +175,7 @@ div > .hotel-img {
     display: flex;
     padding: 2em;
     height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 
@@ -199,14 +183,17 @@ div > .hotel-img {
         0deg,
         rgba(0, 0, 0, 0.7),
         rgba(46, 3, 3, 0.7)
+        
     ), url(../image/section-direccion.jpg);
     color: cornsilk;
+    background-size: cover;
 }
 
 /*Seccion Footer*/
 #section-footer {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 
     background-color: rgba(0, 0, 0, 0.8);
     color: cornsilk;
