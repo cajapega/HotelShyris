@@ -45,12 +45,8 @@ header {
     justify-content: space-between;
 }
 
-.nav-menu {
+#nav-menu {
     display: none;
-}
-
-.nav-menu_visible {
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,9 +59,10 @@ header {
     align-items: center;
 
     background-color: rgba(0, 0, 0, 0.9);
+
 }
 
-.nav-menu-link:hover {
+#nav-menu-link:hover {
     color: crimson;
 }
 
@@ -77,6 +74,11 @@ header {
     font-weight: bold;
     margin-left: 0.8em;
     color: cornsilk;
+}
+
+.logo:hover { 
+    font-size: 2.20em;
+    transition: 0.8s;
 }
 
 .nav-toggle {
@@ -135,17 +137,23 @@ header {
     width: 100vw;
 }
 
-#boton-img {
+.boton-img {
     border-color: rgba(0, 0, 0, 0.849);
     padding: 5% 15%;
     border-radius: 25px;
     margin-top: 1em;
     background-color: rgb(225, 56, 90);
+    
+    /*box-shadow: 3px -2px rgba(0, 0, 0, 0.8);*/
+    box-shadow: -7px -2px 15px rgba(0, 0, 0, 0.2),
+                 7px  2px 15px rgba(0, 0, 0, 0.2);
 }
 
-#boton-img:hover {
+.boton-img:hover {
     background-color: crimson;
     color: aliceblue;
+    box-shadow: -7px -2px 15px rgba(0, 0, 0, 0.5),
+                 7px  2px 15px rgba(0, 0, 0, 0.5);
     transition: 0.8s;
 }
 

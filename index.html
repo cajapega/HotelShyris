@@ -13,18 +13,17 @@
             <!--- ======================== Bara de Menu ======================== -->
             <nav class="nav">
                 <a href="#" class="logo">Hotel Shyris</a>
-                <ul class="nav-menu nav-menu_visible">
-                        <a href="#section-rooms" class="nav-menu-link">Instalaciones</a>
-                        <a href="#section-direccion" class="nav-menu-link">Direccion</a>
-                        <a href="#section-footer" class="nav-menu-link">Contactos</a>
+                <ul id="nav-menu">
+                        <a href="#section-rooms">Instalaciones</a>
+                        <a href="#section-direccion">Direccion</a>
+                        <a href="#section-footer">Contactos</a>
                </ul>
                 <button class="nav-toggle">
-                    <div class="div"></div>
-                    <div class="div"></div>
-                    <div class="div"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </button>
             </nav>
-
         </header>
            <!--- ======================== Section info ======================== -->
         <section id="section-info">
@@ -36,7 +35,7 @@
             <!--- ======================== Sextion Rooms ======================== -->
         <section id="section-rooms">
             <h1>¡Visualiza nuestro establecimiento!</h1>
-            <button id="boton-img" onclick="mostrar()" >Ver</button> 
+            <button class="boton-img" onclick="mostrar()" >Ver</button> 
             <div id="container-img">
                 <img src="../image/hotel-image1.png" alt="Imagen 1">
                 <img src="../image/hotel-image4.png" alt="Imagen 2">
