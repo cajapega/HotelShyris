@@ -64,7 +64,7 @@ header {
 
 }
 
-#nav-menu-link:hover {
+.nav-menu-link:hover {
     color: crimson;
 }
 
