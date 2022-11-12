@@ -1,5 +1,5 @@
 # HotelShyris
-Proyecto persona, Pagina responsive Web de Hotel Shyris
+Proyecto personal, Pagina responsive Web de Hotel Shyris
 
 Visualizacion en Pag Web.
 ![image](https://user-images.githubusercontent.com/64606953/201457300-7ce13ed7-71d4-4ba1-ac88-7dca0db0878b.png)
