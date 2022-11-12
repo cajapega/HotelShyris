@@ -47,9 +47,11 @@ header {
 
 #nav-menu {
     display: none;
+
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 95vh;
     margin-top: 55px;
@@ -137,6 +139,8 @@ header {
     width: 100vw;
 }
 
+.rooms-h1-2 { display: none; }
+
 .boton-img {
     border-color: rgba(0, 0, 0, 0.849);
     padding: 5% 15%;
@@ -202,3 +206,76 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     color: cornsilk;
 }
+
+@media screen and (min-width: 481px) {
+
+.boton-img {
+    border-color: rgba(0, 0, 0, 0.849);
+    padding: 3% 10%;
+    border-radius: 25px;
+}
+
+#container-img img {
+    width: 420px;
+    height: 210px;
+}
+
+}
+
+@media screen and (min-width: 769px) {
+    #nav-menu {
+        position: relative;
+        display: flex;
+
+        width: 68%;
+        height: 55px;
+        margin-top: 0px;
+    
+        flex-direction: row;
+  
+    
+        background: none;
+    }
+    
+    #nav-menu-link:hover { color: none; }
+
+    ul, a{ font-size: 1.1em; }
+
+    ul > a  { 
+        padding: 15px 15px;
+        border-radius: 20px;
+    }
+
+    ul > a:hover  { background-color: lightcoral;}
+
+    
+    .logo { 
+        font-size: 1.70em; 
+        height: 55px;
+    }
+    
+    .nav-toggle { display: none; }
+
+    #section-rooms > h1 { margin: 0; }
+
+    #section-rooms {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .rooms-h1-1 {display: none; }
+    .rooms-h1-2 {display: flex; }
+
+    .boton-img { display: none; }
+
+    #container-img { display: flex; }
+
+    #container-img > img:first-child { display: none; }
+
+    #container-img img {
+        margin-top: 5%;
+        width: 60%;
+        height: 60%;
+    }
+}   

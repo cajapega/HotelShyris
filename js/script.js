@@ -28,11 +28,19 @@ function mostrarMenu() {
     let navMenu = document.getElementById("nav-menu");
     let navMenuStyle = getComputedStyle(navMenu);
     let nmdisplay =navMenuStyle.getPropertyValue("display");
-
+/*
     if(nmdisplay == "none") {
         document.getElementById("nav-menu").style.display = "flex";
     } if (nmdisplay == "flex" ) {
         document.getElementById("nav-menu").style.display = "none";
+    }
+}*/
+//se invitiio ya que el js hace que por defecto el display de navMenu quede en flex
+//al ir agrandando la pantalla, con lo anterior siempre se aplica none
+    if(nmdisplay == "flex") {
+        document.getElementById("nav-menu").style.display = "none";
+    } if (nmdisplay == "none" ) {
+    document.getElementById("nav-menu").style.display = "flex";
     }
 }
 
